@@ -343,7 +343,7 @@ button {
 /** banner section **/
 
 .banner_main {
-     background: url(../images/banner.png);
+     background: url(../images/banner-orange.png);
      background-repeat: no-repeat;
      min-height: 700px;
      display: flex;
@@ -645,12 +645,12 @@ button {
 /** testimonial section **/
 
 .testimonial {
-     margin-top: 80px;
      background: url(../images/banner-white.png);
      background-repeat: no-repeat;
      background-size: cover;
      background-position: center;
      padding-bottom: 313px;
+     padding-top: 80px;
      margin-bottom: -265px;
 }
 
