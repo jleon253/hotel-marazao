@@ -368,5 +368,20 @@ $(function () {
 		interval: 5000
 	});
 
+  // Modal
+  $(document).ready(function() {
+    $("#myBtn").click(function() {
+      $("#myModal").modal();
+    });
+    $('#btnLogin').click(() => {
+      redirectURL();
+    });
+  });
 
+
+  function redirectURL() {
+    const userEmail = $('#loginEmail').val();
+    localStorage.setItem('user', userEmail);
+  };
+  
 });
