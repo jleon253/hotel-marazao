@@ -380,8 +380,27 @@ $(function () {
 
 
   function redirectURL() {
-    const userEmail = $('#loginEmail').val();
+    const userEmail = $('#loginEmail').val().toLowerCase();
+    let role = '';
+    switch (userEmail) {
+      case 'drodriguez@hotelmarazao.com':
+        role = 'Admin';
+        break;
+      case 'lgualteros@hotelmarazao.com':
+        role = 'Contador';
+        break;
+      case 'jleon@hotelmarazao.com':
+        role = 'Contador';
+        break;
+      case 'vlugo@hotelmarazao.com':
+        role = 'Contador';
+        break;
+    
+      default:
+        break;
+    }
     localStorage.setItem('user', userEmail);
+    localStorage.setItem('role', role);
   };
   
 });
