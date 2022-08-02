@@ -104,7 +104,7 @@
                                 data-parent="#accordionExample"
                             >
                                 <div class="card-body">
-                                    <a href="" target="_blank" rel="noopener noreferrer">OpenDoc: gestor documental</a>
+                                    <a href="http://hotelmarazao.com:8080/docman/index.php" target="_blank" rel="noopener noreferrer">OpenDoc: gestor documental</a>
                                 </div>
                             </div>
                         </div>
@@ -138,7 +138,7 @@
                                 data-parent="#accordionExample"
                             >
                                 <div class="card-body">
-                                    <a href="" target="_blank" rel="noopener noreferrer">ODD: gestor de recursos financieros</a>
+                                    <a href="https://www.odoo.com/es_ES/web/login" target="_blank" rel="noopener noreferrer">ODD: gestor de recursos financieros</a>
                                 </div>
                             </div>
                         </div>
@@ -157,12 +157,15 @@
         <script src="assets/js/bootstrap.min.js"></script>
         <script src="assets/js/scripts.js"></script>
         <script>
-            localStorage.setItem('user', 'Diana');
-            localStorage.setItem('role', 'Contabilidad');
+            //localStorage.setItem('user', 'Diana');
+            //localStorage.setItem('role', 'Contabilidad');
             var name = localStorage.getItem("user");
-            $("#name").appendChild(document.createTextNode("some new content"));
+            $("#name").text(name);
             var role = localStorage.getItem("role");
-            $("#role").appendChild(role);
+            $("#role").text(role);
+            if (name != "Diana") {
+                $("#accordionExampleB").hide();
+            }
         </script>
     </body>
 

@@ -382,6 +382,7 @@ $(function () {
   function redirectURL() {
     const userEmail = $('#loginEmail').val();
     localStorage.setItem('user', userEmail);
+    window.location.href = '/dashboard-template';
   };
   
 });
