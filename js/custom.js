@@ -401,6 +401,7 @@ $(function () {
     }
     localStorage.setItem('user', userEmail);
     localStorage.setItem('role', role);
+    window.location.href = '/dashboard-template';
   };
   
 });
